@@ -1,0 +1,45 @@
+int length;
+length := 10;
+int data [length];
+data[0] := 1;
+data[1] := 3;
+data[2] := 9;
+data[3] := 0;
+data[4] := 2;
+data[5] := 6;
+data[6] := 5;
+data[7] := 7;
+data[8] := 4;
+data[9] := 8;
+
+int i;
+i := 0;
+int j;
+j := 0;
+int tmp;
+
+while (i < length) do {
+  j := length - 1;
+  while (i < j) do {
+    if (data[j] < data[j - 1]) then {
+      tmp := data[j];
+      data[j] := data[j - 1];
+      data[j - 1] := tmp;
+    } else {
+      skip;
+    };
+    j := j - 1;
+  };
+  i := i + 1;
+};
+
+print data[0];
+print data[1];
+print data[2];
+print data[3];
+print data[4];
+print data[5];
+print data[6];
+print data[7];
+print data[8];
+print data[9];
