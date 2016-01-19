@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>BimsS Interpriter</title>
+  <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="./bower_components/font-awesome/css/font-awesome.css"></link>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-default topnav" role="navigation">
+      <div class="container topnav">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand topnav" href="#">BimsS Interpriter</a>
+          </div>
+      </div>
+      <!-- /.container -->
+  </nav>
+
+  <div class="content-section-a">
+      <div class="container">
+        <h2>Code</h2>
+        <textarea id="code"></textarea>
+        <div class="btn-group btn-group-lg pull-right">
+          <button type="button" class="btn btn-default btn-danger" id="reset_btn">Reset</button>
+          <button type="button" class="btn btn-default btn-primary" id="run_btn">Run</button>
+        </div>
+      </div>
+      <!-- /.container -->
+  </div>
+
+  <div class="content-section-b">
+      <div class="container">
+        <h2>Result</h2>
+        <textarea id="result" disabled="disabled"></textarea>
+      </div>
+      <!-- /.container -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer navbar-fixed-bottom">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <ul class="list-inline">
+                      <li>
+                          <a href="#">Home</a>
+                      </li>
+                      <li class="footer-menu-divider">&sdot;</li>
+                      <li>
+                          <a href="#about">About</a>
+                      </li>
+                      <li class="footer-menu-divider">&sdot;</li>
+                      <li>
+                          <a href="#services">Services</a>
+                      </li>
+                      <li class="footer-menu-divider">&sdot;</li>
+                      <li>
+                          <a href="#contact">Contact</a>
+                      </li>
+                  </ul>
+                  <p class="copyright text-muted small">Copyright &copy; XXX 2016. All Rights Reserved</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+  <script type="text/javascript" src="./bower_components/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="./scripts/main.js"></script>
+
+</body>
+</html>
