@@ -48,7 +48,7 @@ public class Interpreter {
         public State visit(SAss s, State st) {
             String id = exec(s.var_, st);
             if (!(st.exists(id))) {
-                System.out.println("'%s' is not Variable.");
+                System.out.printf("'%s' is not Variable.\n", id);
                 return st;
             }
 
@@ -77,7 +77,7 @@ public class Interpreter {
         public State visit(SPrint s, State st) {
             String id = exec(s.var_, st);
             if (!(st.exists(id))) {
-                System.out.println("'%s' is not a Variable.");
+                System.out.printf("'%s' is not a Variable.\n", id);
                 return st;
             }
 
@@ -89,7 +89,7 @@ public class Interpreter {
         public State visit(SInt s, State st) {
             String id = s.ident_;
             if (st.exists(id)) {
-                System.out.println("'%s' is already used for Variable.");
+                System.out.printf("'%s' is already used for Variable.\n", id);
                 return st;
             }
             st.update(id, 0);
@@ -105,7 +105,7 @@ public class Interpreter {
                 String id = String.format("%s[%d]", prefix, i);
                 ids.add(id);
                 if (st.exists(id)) {
-                    System.out.println("'%s' is already used for Variable.");
+                    System.out.printf("'%s' is already used for Variable.\n", id);
                 }
             }
 
